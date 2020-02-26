@@ -256,8 +256,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen (numbers) {
+  let productArray = [];
+  for (let i = 0; i < numbers.length; i++) {
+    productArray.push(Number(numbers[i]) + 10)
+  }
+  return productArray;
 
-
+}
 
 ////////// PROBLEM 11 //////////
 
