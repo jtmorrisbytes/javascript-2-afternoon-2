@@ -130,6 +130,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray) {
+  let evenNumbers = [];
+  let oddNumbers = [];
+
+  for(let i = 0; i < numbersArray.length; i++) {
+    if(numbersArray[i] %2 === 0){
+      evenNumbers.push(numbersArray[i]);
+    }
+    else {
+      oddNumbers.push(numbersArray[i]);
+    }
+  }
+  return [evenNumbers,oddNumbers];
+}
 
 
 
