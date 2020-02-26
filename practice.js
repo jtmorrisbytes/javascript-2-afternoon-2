@@ -166,8 +166,19 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
-
+function finder(array) {
+  let randomNumber = getRandomArbitrary();
+  for(let i = 0; i < array.length; i++){
+    if(array[i]===randomNumber){
+      return true;
+    }
+  }
+  return false;
+}
+// I think a better way to do this function is to use includes
+function finderUsingIncludes(array) {
+  array.includes(getRandomArbitrary());
+}
 
 ////////// PROBLEM 8 //////////
 
