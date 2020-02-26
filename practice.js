@@ -357,13 +357,29 @@ var colt = {
 */
 
 //Code Here
+devMountainEmployees.push(joe,cahlan,ryan,colt);
 
-
+console.log(devMountainEmployees.length === 4 )
 
 /*
   Now let's say Cahlan has to take a leave of absence.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
+
+for (let i = 0; i < devMountainEmployees.length; i++) {
+  if(devMountainEmployees[i]===cahlan) {
+    devMountainEmployees.splice(i,1);
+  }
+}
+
+
+// this is how I would solve the probelm
+function preferredSolutionToProblem12() {
+  if(devMountainEmployees.includes(cahlan)){
+    devMountainEmployees.splice(devMountainEmployees.indexOf(cahlan),1)
+  }
+}
+
 
 //Code Here
 
