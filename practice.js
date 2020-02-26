@@ -394,7 +394,7 @@ function preferredSolutionToProblem12() {
 */
 
 //Code Here
-
+let users = [];
 
 
 /*
@@ -415,7 +415,21 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
+users.push(
+  user1,
+  {
+    name:"Jordan Morris",
+    email: "abc123@youandme.com",
+    password: "imabutt",
+    username: "fartsalot",
+  },
+  {
+    name:"Jane Doe",
+    email: "janeDoe21@fakeperson.net",
+    password: "lolipops",
+    username: "happyFeet"
+  }
+)
 
 
 /*
@@ -430,6 +444,11 @@ var user1 = {
 
 //Code Here
 
+for (let i=(users.length-1); i>=0; i--) {
+  if(users[i].email === user1.email) {
+    users.splice(i,1)
+  }
+}
 
 
 /*
