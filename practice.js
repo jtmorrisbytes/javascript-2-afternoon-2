@@ -35,9 +35,13 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
-
-
+function last(arr){
+  return arr[arr.length-1];
+}
+// can also use [].pop()
+function last_pop(arr){
+  return arr.pop()
+}
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
