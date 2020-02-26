@@ -287,8 +287,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function longer (arr1, arr2) {
+  // TERNARY SOLUTION!
+  return arr1 > arr2 ? arr1 : arr2;
+}
 
-
+function shorter (arr1, arr2) {
+  return arr1< arr2 ? arr1 : arr2; 
+}
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
@@ -300,7 +306,18 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
-
+function both(arr1,arr2) {
+  let matches = [];
+  if (arr1.length !== arr2.length) {
+    console.log("this function only works if the arrays are the same size");
+  }
+  for(let i=0; i < arr1.length; i++) {
+    if (arr2.includes(arr1[i])) {
+      matches.push(arr1[i]);
+    }
+  }
+  return matches;
+}
 
 ////////// PROBLEM 12 //////////
 
