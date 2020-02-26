@@ -206,17 +206,41 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList, itemToRemove) {
+  if(!myGroceryList || !itemToRemove) {
+    return [];
+  }
 
-
+  else if (myGroceryList.includes(itemToRemove)) {
+    console.log("removeItem found item")
+    myGroceryList.splice(myGroceryList.indexOf(itemToRemove),1);
+  }
+  return myGroceryList;
+}
+function addItem(myGroceryList, itemToAdd) {
+  if(!myGroceryList || !itemToAdd) {
+    return [];
+  }
+  else {
+    myGroceryList.push(itemToAdd);
+    return myGroceryList;
+  }
+}
 
 ////////// PROBLEM 9 //////////
-
+ 
 /*
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
 //Code Here
-
+function maker(){
+  let numbers = []
+  for(let i = 1; i <= 215; i++){
+    numbers.push(i)
+  }
+  return numbers;
+}
 
 
 ////////// PROBLEM 10 //////////
